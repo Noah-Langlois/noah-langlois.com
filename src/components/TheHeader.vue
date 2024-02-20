@@ -39,7 +39,27 @@
                 <ul class="dropdown-menu">
                   <li><a class="dropdown-item" href="/CV">CV</a></li>
                   <li><hr class="dropdown-divider" /></li>
-                  <li><a class="dropdown-item disabled" href="#">Coming soon...</a></li>
+                  <li>
+                    <a class="dropdown-item" href="/ADHD_study">ADHD Study</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle text-light"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Jeux
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item disabled" href="/">Tic-Tac-Toe</a></li>
+                  <li><hr class="dropdown-divider" /></li>
+                  <li><a class="dropdown-item disabled" href="/">Sudoku</a></li>
+                  <li><hr class="dropdown-divider" /></li>
+                  <li><a class="dropdown-item disabled" href="/">Bataille Navale</a></li>
                 </ul>
               </li>
             </ul>
