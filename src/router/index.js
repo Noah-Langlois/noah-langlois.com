@@ -2,7 +2,8 @@ import { createRouter, createWebHistory } from 'vue-router'
 import HomeView from '../views/HomeView.vue'
 import CuriculumVitae from '../components/CuriculumVitae.vue'
 import Adhd from '../views/AdhdView.vue'
-
+import MaFormationVue from '../views/MaFormationView.vue'
+import MesStagesVue from '../views/MesStagesView.vue'
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
   routes: [
@@ -23,6 +24,16 @@ const router = createRouter({
       path: '/CV',
       name: 'CV',
       component: CuriculumVitae
+    },
+    {
+      path: '/scolarite',
+      name: 'scolarite',
+      component: MaFormationVue
+    },
+    {
+      path: '/stages',
+      name: 'stages',
+      component: MesStagesVue
     },
     {
       path: '/ADHD_study',
