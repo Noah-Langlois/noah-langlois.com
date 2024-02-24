@@ -5,18 +5,13 @@ import TheMe from '@/components/TheMe.vue'
 
 <template>
   <main>
-    <div class="row">
-      <div class="col-5">
-        <div class="d-flex justify-content-center p-3">
+    <div class="row align-items-center">
+      <div class="col text-center">
+        <div class="pt-4">
           <TheMe />
         </div>
-        <div class="d-flex justify-content-center">
+        <div class="pt-3">
           <TheWelcome />
-        </div>
-      </div>
-      <div class="col">
-        <div class="d-flex pt-5" style="height: 400px">
-          <div class="vr"></div>
         </div>
       </div>
     </div>

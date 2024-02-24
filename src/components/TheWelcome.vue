@@ -1,15 +1,10 @@
 <script setup></script>
 
 <template>
-  <div class="text-center" style="width: 57%">
-    <div class="">
-      <p>
-        <b>Bonjour ! &#128075;</b>
-        Je suis Noah LANGLOIS, étudiant ingénieur à l'<a href="https://www.ensma.fr/">ISAE-ENSMA</a>
-        👨‍🎓 <br />
-        Bienvenue sur mon site internet qui regroupe mes infromations, divers projets et docouments
-        !
-      </p>
-    </div>
-  </div>
+  <p>
+    <b>Bonjour ! &#128075;</b>
+    Je suis Noah LANGLOIS, étudiant ingénieur à l'<a href="https://www.ensma.fr/">ISAE-ENSMA</a> 👨‍🎓
+    <br />
+    Bienvenue sur mon site internet qui regroupe mes infromations, divers projets et docouments !
+  </p>
 </template>
