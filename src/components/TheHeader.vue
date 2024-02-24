@@ -1,4 +1,6 @@
-<script setup></script>
+<script setup>
+import TheLinks from '@/components/TheLinks.vue'
+</script>
 
 <template>
   <main class="header">
@@ -87,6 +89,7 @@
             </ul>
           </div>
         </div>
+        <TheLinks />
       </nav>
     </div>
   </main>
