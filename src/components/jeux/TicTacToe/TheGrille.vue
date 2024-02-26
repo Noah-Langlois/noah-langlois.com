@@ -95,7 +95,7 @@ function reset() {
     <h1 class="ps-3">a gagné</h1>
   </div>
   <div v-if="isWon" class="d-flex justify-content-center p-4">
-    <button class="btn btn-outline-dark" @click="reset">Reset</button>
+    <button class="btn btn-outline-dark" @click="reset">Rejouer</button>
   </div>
   <div class="d-flex justify-content-center">
     <div class="grille">
