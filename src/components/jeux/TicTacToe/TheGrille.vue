@@ -1,5 +1,6 @@
 <script setup>
 import TheCase from './TheCase.vue'
+import TheInfo from './TheInfo.vue'
 import { ref } from 'vue'
 
 const stateCases = ref(['', '', '', '', '', '', '', '', ''])
@@ -54,5 +55,8 @@ function play(ca) {
         </div>
       </div>
     </div>
+  </div>
+  <div class="pt-5">
+    <TheInfo :player="player" />
   </div>
 </template>
