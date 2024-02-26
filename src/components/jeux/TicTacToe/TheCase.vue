@@ -15,6 +15,6 @@ defineProps({
     <div v-if="stateCases[caseNumber] === 'rond'">
       <TheRond />
     </div>
-    <div v-if="stateCases[caseNumber] === ''" style="width: 100px; height: 100px"></div>
+    <div v-if="stateCases[caseNumber] === ''" class="emptyCase"></div>
   </div>
 </template>
