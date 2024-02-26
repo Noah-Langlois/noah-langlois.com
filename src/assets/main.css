@@ -5,6 +5,22 @@
     opacity: 100%;
 }
 
+.nav-item:hover::after {
+  width: 100%;
+  opacity: 1;
+}
+
+.nav-item::after {
+  content: '';
+  display: block;
+  height: 0px;
+  width: 0px;
+  transition: all 1s;
+  background: white;
+  opacity: 0;
+  height: 1px;
+}
+
 .profile-picture {
     width: 25%;
     border-radius: 100%;
