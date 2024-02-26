@@ -14,6 +14,7 @@
             >
               ISAE-ENSMA
             </a>
+            (2021-2024)
           </h1>
           <p>Étuidant ingénieur aérospatial spécialisé en développement informatique</p>
         </div>
@@ -27,11 +28,11 @@
         <div class="accordion-item">
           <h2 class="accordion-header">
             <button
-              class="accordion-button"
+              class="accordion-button collapsed"
               type="button"
               data-bs-toggle="collapse"
               data-bs-target="#collapseOne"
-              aria-expanded="true"
+              aria-expanded="false"
               aria-controls="collapseOne"
             >
               3ème année - Informatique / Systèmes
@@ -39,7 +40,7 @@
           </h2>
           <div
             id="collapseOne"
-            class="accordion-collapse collapse show"
+            class="accordion-collapse collapse"
             data-bs-parent="#accordionExample"
           >
             <div class="accordion-body">
@@ -177,6 +178,34 @@
                   </ul>
                 </div>
               </div>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapseFour"
+              aria-expanded="false"
+              aria-controls="collapseFour"
+            >
+              Cours optionnels
+            </button>
+          </h2>
+          <div
+            id="collapseFour"
+            class="accordion-collapse collapse"
+            data-bs-parent="#accordionExample"
+          >
+            <div class="accordion-body">
+              <ul>
+                <li>Mécanique Spatiale</li>
+                <li>Mécanismes spatiaux</li>
+                <li>Aircraft Design</li>
+                <li>Histoire des sciences</li>
+              </ul>
             </div>
           </div>
         </div>

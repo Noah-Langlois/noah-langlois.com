@@ -7,9 +7,15 @@ import TheBac from '@/components/TheBac.vue'
 <template>
   <main>
     <div class="d-flex flex-column justify-content-center p-5">
-      <TheEnsma />
-      <TheGrignard />
-      <TheBac />
+      <div>
+        <TheEnsma />
+      </div>
+      <div class="pt-3">
+        <TheGrignard />
+      </div>
+      <div class="pt-3">
+        <TheBac />
+      </div>
     </div>
   </main>
 </template>
