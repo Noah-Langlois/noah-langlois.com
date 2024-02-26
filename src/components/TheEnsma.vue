@@ -20,7 +20,7 @@
         </div>
         <img
           src="https://upload.wikimedia.org/wikipedia/fr/thumb/0/00/Logo_ISAE-ENSMA.svg/1200px-Logo_ISAE-ENSMA.svg.png"
-          style="width: 12%"
+          class="ENSMA"
         />
       </div>
       <h2>Liste des cours</h2>

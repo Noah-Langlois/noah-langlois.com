@@ -10,7 +10,7 @@
         </div>
         <img
           src="https://upload.wikimedia.org/wikipedia/en/thumb/b/b7/Reykjavik_University_Logo.svg/1200px-Reykjavik_University_Logo.svg.png"
-          style="width: 8%"
+          class="RU"
         />
       </div>
       <p>
