@@ -7,7 +7,7 @@ import TheMe from '@/components/TheMe.vue'
   <main>
     <div class="row align-items-center">
       <div class="col text-center">
-        <div class="pt-4">
+        <div class="pt-4 top-entrance">
           <TheMe />
         </div>
         <div class="pt-3">

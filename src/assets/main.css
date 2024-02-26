@@ -5,6 +5,38 @@
     opacity: 100%;
 }
 
+.text-entrance {
+  animation: fade-in-bottom 2s ease 0s 1 normal forwards;
+}
+
+.top-entrance {
+  animation: fade-in-top 2s ease 0s 1 normal forwards;
+}
+
+@keyframes fade-in-bottom {
+	0% {
+		opacity: 0;
+		transform: translateY(50px);
+	}
+
+	100% {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
+
+@keyframes fade-in-top {
+	0% {
+		opacity: 0;
+		transform: translateY(-50px);
+	}
+
+	100% {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
+
 .nav-item:hover::after {
   width: 100%;
   opacity: 1;
