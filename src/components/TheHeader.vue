@@ -7,7 +7,7 @@ import TheLinks from '@/components/TheLinks.vue'
     <div class="ps-3">
       <nav class="navbar navbar-expand-lg">
         <div class="container-fluid">
-          <a class="navbar-brand text-light" id="websiteLogo" href="#">
+          <a class="navbar-brand text-light" id="websiteLogo" href="/">
             noah-langlois.fr
             <span class="logo-cursor">_</span>
           </a>

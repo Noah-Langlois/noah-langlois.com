@@ -6,6 +6,8 @@ const { pdf } = usePDF('../../public/CV.pdf')
 
 <template>
   <div class="d-flex justify-content-center align-items-center pt-5">
-    <VuePDF :pdf="pdf" :scale="2"></VuePDF>
+    <div id="CV">
+      <VuePDF :pdf="pdf" :scale="2"></VuePDF>
+    </div>
   </div>
 </template>

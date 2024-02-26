@@ -10,7 +10,7 @@
         </div>
         <img
           src="https://upload.wikimedia.org/wikipedia/commons/a/a8/Logo_CNES_2017_triangulaire_bleu.png"
-          style="width: 9%"
+          class="CNES"
         />
       </div>
       <div class="card-title"></div>

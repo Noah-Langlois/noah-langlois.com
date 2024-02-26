@@ -1,24 +1,102 @@
 <script setup>
 import TheCase from './TheCase.vue'
 import TheInfo from './TheInfo.vue'
+import TheRond from './TheRond.vue'
+import TheCroix from './TheCroix.vue'
 import { ref } from 'vue'
 
 const stateCases = ref(['', '', '', '', '', '', '', '', ''])
 const player = ref('rond')
+const isWon = ref(false)
+
+function checkWinner() {
+  if (
+    stateCases.value[0] === stateCases.value[1] &&
+    stateCases.value[0] === stateCases.value[2] &&
+    stateCases.value[0] != ''
+  ) {
+    isWon.value = true
+  }
+  if (
+    stateCases.value[3] === stateCases.value[4] &&
+    stateCases.value[3] === stateCases.value[5] &&
+    stateCases.value[3] != ''
+  ) {
+    isWon.value = true
+  }
+  if (
+    stateCases.value[6] === stateCases.value[7] &&
+    stateCases.value[6] === stateCases.value[8] &&
+    stateCases.value[6] != ''
+  ) {
+    isWon.value = true
+  }
+  if (
+    stateCases.value[0] === stateCases.value[3] &&
+    stateCases.value[0] === stateCases.value[6] &&
+    stateCases.value[0] != ''
+  ) {
+    isWon.value = true
+  }
+  if (
+    stateCases.value[1] === stateCases.value[4] &&
+    stateCases.value[1] === stateCases.value[7] &&
+    stateCases.value[1] != ''
+  ) {
+    isWon.value = true
+  }
+  if (
+    stateCases.value[2] === stateCases.value[5] &&
+    stateCases.value[2] === stateCases.value[8] &&
+    stateCases.value[2] != ''
+  ) {
+    isWon.value = true
+  }
+  if (
+    stateCases.value[0] === stateCases.value[4] &&
+    stateCases.value[0] === stateCases.value[8] &&
+    stateCases.value[0] != ''
+  ) {
+    isWon.value = true
+  }
+  if (
+    stateCases.value[6] === stateCases.value[4] &&
+    stateCases.value[6] === stateCases.value[2] &&
+    stateCases.value[6] != ''
+  ) {
+    isWon.value = true
+  }
+}
 
 function play(ca) {
-  if (stateCases.value[ca] != 'rond' && stateCases.value[ca] != 'croix') {
+  if (stateCases.value[ca] != 'rond' && stateCases.value[ca] != 'croix' && !isWon.value) {
     stateCases.value[ca] = player.value
-    if (player.value === 'rond') {
-      player.value = 'croix'
-    } else if (player.value === 'croix') {
-      player.value = 'rond'
+    checkWinner()
+    if (!isWon.value) {
+      if (player.value === 'rond') {
+        player.value = 'croix'
+      } else if (player.value === 'croix') {
+        player.value = 'rond'
+      }
     }
   }
+}
+
+function reset() {
+  stateCases.value = ['', '', '', '', '', '', '', '', '']
+  isWon.value = false
 }
 </script>
 
 <template>
+  <div v-if="isWon" class="d-flex justify-content-center align-items-center">
+    <TheCroix v-if="player === 'croix'" />
+    <TheRond v-if="player === 'rond'" />
+    <h1 class="ps-3">a gagné</h1>
+  </div>
+  <div v-if="isWon" class="d-flex justify-content-center p-4">
+    <button class="btn btn-outline-dark" @click="reset">Reset</button>
+  </div>
   <div class="d-flex justify-content-center">
     <div class="grille">
       <div class="row">
