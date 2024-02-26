@@ -4,6 +4,7 @@ import CuriculumVitae from '../components/CuriculumVitae.vue'
 import Adhd from '../views/AdhdView.vue'
 import MaFormationVue from '../views/MaFormationView.vue'
 import MesStagesVue from '../views/MesStagesView.vue'
+import TicTacToeVue from '../views/TicTacToeView.vue'
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
   routes: [
@@ -34,6 +35,11 @@ const router = createRouter({
       path: '/stages',
       name: 'stages',
       component: MesStagesVue
+    },
+    {
+      path: '/jeux/tictactoe',
+      name: 'tictactoe',
+      component: TicTacToeVue
     },
     {
       path: '/ADHD_study',

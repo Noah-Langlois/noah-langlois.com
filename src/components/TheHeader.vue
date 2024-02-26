@@ -79,7 +79,7 @@ import TheLinks from '@/components/TheLinks.vue'
                   Jeux
                 </a>
                 <ul class="dropdown-menu">
-                  <li><a class="dropdown-item disabled" href="/">Tic-Tac-Toe</a></li>
+                  <li><a class="dropdown-item" href="/jeux/tictactoe">Tic-Tac-Toe</a></li>
                   <li><hr class="dropdown-divider" /></li>
                   <li><a class="dropdown-item disabled" href="/">Sudoku</a></li>
                   <li><hr class="dropdown-divider" /></li>
