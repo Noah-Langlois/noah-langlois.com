@@ -9,10 +9,10 @@ defineProps({
 
 <template>
   <div>
-    <div v-if="stateCases[caseNumber] === 'croix'">
+    <div v-if="stateCases[caseNumber] === 'croix'" class="croix-rond-Tic-Tac-Toe">
       <TheCroix />
     </div>
-    <div v-if="stateCases[caseNumber] === 'rond'">
+    <div v-if="stateCases[caseNumber] === 'rond'" class="croix-rond-Tic-Tac-Toe">
       <TheRond />
     </div>
     <div v-if="stateCases[caseNumber] === ''" class="emptyCase"></div>

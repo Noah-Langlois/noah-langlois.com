@@ -1,11 +1,11 @@
 <script setup></script>
 
 <template>
-  <div class="card text-entrance">
+  <div class="card text-entrance" id="ENSMA-Card">
     <div class="card-body">
       <div class="d-flex justify-content-between">
         <div>
-          <h1 class="card-title">
+          <h1 class="card-title" id="ENSMA-Title">
             <a
               href="https://www.ensma.fr/"
               target="_blank"
