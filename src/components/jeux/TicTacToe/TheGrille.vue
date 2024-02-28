@@ -8,8 +8,10 @@ import { ref } from 'vue'
 const stateCases = ref(['', '', '', '', '', '', '', '', ''])
 const player = ref('rond')
 const isWon = ref(false)
+const isNull = ref(false)
 
 function checkWinner() {
+  let s = 0
   if (
     stateCases.value[0] === stateCases.value[1] &&
     stateCases.value[0] === stateCases.value[2] &&
@@ -66,6 +68,16 @@ function checkWinner() {
   ) {
     isWon.value = true
   }
+  if (!isWon.value) {
+    for (let i = 0; i <= stateCases.value.length; i++) {
+      if (stateCases.value[i] == '') {
+        s = s + 1
+      }
+    }
+    if (s === 0) {
+      isNull.value = true
+    }
+  }
 }
 
 function play(ca) {
@@ -85,16 +97,20 @@ function play(ca) {
 function reset() {
   stateCases.value = ['', '', '', '', '', '', '', '', '']
   isWon.value = false
+  isNull.value = false
 }
 </script>
 
 <template>
+  <div class="d-flex justify-content-center align-items-center" v-if="isNull">
+    <h1>Match nul !</h1>
+  </div>
   <div v-if="isWon" class="d-flex justify-content-center align-items-center">
     <TheCroix v-if="player === 'croix'" />
     <TheRond v-if="player === 'rond'" />
     <h1 class="ps-3">a gagné</h1>
   </div>
-  <div v-if="isWon" class="d-flex justify-content-center p-4">
+  <div v-if="isWon || isNull" class="d-flex justify-content-center p-4">
     <button class="btn btn-outline-dark" @click="reset">Rejouer</button>
   </div>
   <div class="d-flex justify-content-center">
