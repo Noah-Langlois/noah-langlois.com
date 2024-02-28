@@ -1,7 +1,7 @@
 <script setup></script>
 
 <template>
-  <div class="card">
+  <div class="card text-entrance">
     <div class="card-body">
       <div class="card-title">
         <h1>Baccalauréat Scientifique (2016-2019)</h1>
@@ -18,10 +18,8 @@
         , Cherbourg-en-Cotentin
       </p>
       <p>
-        <strong>
-          Mention Très Bien
-      </strong>
-    </p>
+        <strong> Mention Très Bien </strong>
+      </p>
     </div>
   </div>
 </template>

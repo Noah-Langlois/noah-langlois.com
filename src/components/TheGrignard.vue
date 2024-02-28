@@ -1,7 +1,7 @@
 <script setup></script>
 
 <template>
-  <div class="card">
+  <div class="card text-entrance">
     <div class="card-body">
       <div class="card-title">
         <h1>CPGE MP/MPSI (2019-2021)</h1>

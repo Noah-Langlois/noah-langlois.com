@@ -1,7 +1,7 @@
 <script setup></script>
 
 <template>
-  <p>
+  <p class="text-entrance">
     <b>Bonjour ! &#128075;</b>
     Je suis Noah LANGLOIS, étudiant ingénieur à l'<a href="https://www.ensma.fr/" target="_blank" rel="noopener noreferrer">ISAE-ENSMA</a> 👨‍🎓
     <br />
