@@ -12,7 +12,7 @@ defineProps({
         <button class="btn btn-outline-dark" v-on:click="setGame('2P')">2 Joueur</button>
       </div>
       <div class="pt-3">
-        <button class="btn btn-outline-dark disabled">1 Joueur</button>
+        <button class="btn btn-outline-dark" v-on:click="setGame('1P')">1 Joueur</button>
       </div>
     </div>
   </div>

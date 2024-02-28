@@ -1,6 +1,7 @@
 <script setup>
 defineProps({
-  setGame: Function
+  setGame: Function,
+  gameSelected: String
 })
 
 import TheCase from './TheCase.vue'
@@ -84,9 +85,25 @@ function checkWinner() {
   }
 }
 
-function play(ca) {
+function play(ca, game) {
+  let botplay = 0
   if (stateCases.value[ca] != 'rond' && stateCases.value[ca] != 'croix' && !isWon.value) {
     stateCases.value[ca] = player.value
+    checkWinner()
+    if (!isWon.value) {
+      if (player.value === 'rond') {
+        player.value = 'croix'
+      } else if (player.value === 'croix') {
+        player.value = 'rond'
+      }
+    }
+  }
+  if (game === '1P') {
+    botplay = Math.floor(Math.random() * 9)
+    while (stateCases.value[botplay] != '' && !isWon.value) {
+      botplay = Math.floor(Math.random() * 9)
+    }
+    stateCases.value[botplay] = player.value
     checkWinner()
     if (!isWon.value) {
       if (player.value === 'rond') {
@@ -137,35 +154,41 @@ function reset() {
   <div class="d-flex justify-content-center">
     <div class="grille">
       <div class="row">
-        <div class="col border border-start-0 border-top-0" v-on:click="play(0)">
+        <div
+          class="col border border-start-0 border-top-0"
+          v-on:click="play(0, $props.gameSelected)"
+        >
           <TheCase :stateCases="stateCases" :caseNumber="0" />
         </div>
-        <div class="col border border-top-0" v-on:click="play(1)">
+        <div class="col border border-top-0" v-on:click="play(1, gameSelected)">
           <TheCase :stateCases="stateCases" :caseNumber="1" />
         </div>
-        <div class="col border border-top-0 border-end-0" v-on:click="play(2)">
+        <div class="col border border-top-0 border-end-0" v-on:click="play(2, gameSelected)">
           <TheCase :stateCases="stateCases" :caseNumber="2" />
         </div>
       </div>
       <div class="row">
-        <div class="col border border-start-0" v-on:click="play(3)">
+        <div class="col border border-start-0" v-on:click="play(3, gameSelected)">
           <TheCase :stateCases="stateCases" :caseNumber="3" />
         </div>
-        <div class="col border" v-on:click="play(4)">
+        <div class="col border" v-on:click="play(4, gameSelected)">
           <TheCase :stateCases="stateCases" :caseNumber="4" />
         </div>
-        <div class="col border border-end-0" v-on:click="play(5)">
+        <div class="col border border-end-0" v-on:click="play(5, gameSelected)">
           <TheCase :stateCases="stateCases" :caseNumber="5" />
         </div>
       </div>
       <div class="row">
-        <div class="col border border-bottom-0 border-start-0" v-on:click="play(6)">
+        <div
+          class="col border border-bottom-0 border-start-0"
+          v-on:click="play(6, $props.gameSelected)"
+        >
           <TheCase :stateCases="stateCases" :caseNumber="6" />
         </div>
-        <div class="col border border-bottom-0" v-on:click="play(7)">
+        <div class="col border border-bottom-0" v-on:click="play(7, gameSelected)">
           <TheCase :stateCases="stateCases" :caseNumber="7" />
         </div>
-        <div class="col border border-bottom-0 border-end-0" v-on:click="play(8)">
+        <div class="col border border-bottom-0 border-end-0" v-on:click="play(8, gameSelected)">
           <TheCase :stateCases="stateCases" :caseNumber="8" />
         </div>
       </div>

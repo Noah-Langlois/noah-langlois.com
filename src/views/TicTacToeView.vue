@@ -15,8 +15,8 @@ function setGame(pValue) {
     <div class="pt-5" v-if="gameSelected === ''">
       <GameMenu :setGame="setGame" />
     </div>
-    <div class="pt-5" v-if="gameSelected === '2P'">
-      <TheGrille :setGame="setGame" />
+    <div class="pt-5" v-else>
+      <TheGrille :setGame="setGame" :gameSelected="gameSelected" />
     </div>
   </main>
 </template>
