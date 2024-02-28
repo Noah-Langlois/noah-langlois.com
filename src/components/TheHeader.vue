@@ -84,6 +84,8 @@ import TheLinks from '@/components/TheLinks.vue'
                   <li><a class="dropdown-item disabled" href="/">Sudoku</a></li>
                   <li><hr class="dropdown-divider" /></li>
                   <li><a class="dropdown-item disabled" href="/">Bataille Navale</a></li>
+                  <li><hr class="dropdown-divider" /></li>
+                  <li><a class="dropdown-item disabled" href="/">Loto</a></li>
                 </ul>
               </li>
             </ul>
