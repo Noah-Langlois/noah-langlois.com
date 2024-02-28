@@ -5,6 +5,33 @@
     opacity: 100%;
 }
 
+.croix-rond-Tic-Tac-Toe {
+  animation: scale-up-center 1s ease 0s 1 normal forwards;
+}
+
+@keyframes scale-up-center {
+	0% {
+		transform: scale(0.5);
+	}
+
+	100% {
+		transform: scale(1);
+	}
+}
+
+#ENSMA-Title:hover::after {
+  width: 45%;
+}
+
+#ENSMA-Title::after {
+  content: "";
+  display: block;
+  height: 1px;
+  width: 0px;
+  background-color: black;
+  transition: all 1s;
+}
+
 .text-entrance {
   animation: fade-in-bottom 2s ease 0s 1 normal forwards;
 }
@@ -45,7 +72,6 @@
 .nav-item::after {
   content: '';
   display: block;
-  height: 0px;
   width: 0px;
   transition: all 1s;
   background: white;
