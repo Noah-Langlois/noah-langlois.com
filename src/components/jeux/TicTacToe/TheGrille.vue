@@ -98,7 +98,7 @@ function play(ca, game) {
       }
     }
   }
-  if (game === '1P') {
+  if (game === '1P' && !isNull.value && !isWon.value) {
     botplay = Math.floor(Math.random() * 9)
     while (stateCases.value[botplay] != '' && !isWon.value) {
       botplay = Math.floor(Math.random() * 9)
