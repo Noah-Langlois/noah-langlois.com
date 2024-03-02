@@ -143,15 +143,15 @@ function reset() {
   <div class="d-flex justify-content-center align-items-center" v-if="isNull">
     <h1>Match nul !</h1>
   </div>
-  <div v-if="isWon" class="d-flex justify-content-center align-items-center">
+  <div v-if="isWon" class="d-flex justify-content-center align-items-center top-entrance">
     <TheCroix v-if="player === 'croix'" />
     <TheRond v-if="player === 'rond'" />
     <h1 class="ps-3">a gagné</h1>
   </div>
-  <div v-if="isWon || isNull" class="d-flex justify-content-center p-4">
+  <div v-if="isWon || isNull" class="d-flex justify-content-center p-4 top-entrance">
     <button class="btn btn-outline-dark" @click="reset">Rejouer</button>
   </div>
-  <div class="d-flex justify-content-center">
+  <div class="d-flex justify-content-center fluid-translation">
     <div class="grille">
       <div class="row">
         <div
