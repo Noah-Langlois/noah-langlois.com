@@ -35,7 +35,7 @@ import TheLinks from '@/components/TheLinks.vue'
                 >
                   Formation
                 </a>
-                <ul class="dropdown-menu">
+                <ul class="dropdown-menu fade-in-bottom-1">
                   <li><a class="dropdown-item" href="/scolarite">Scolarité</a></li>
                   <li><hr class="dropdown-divider" /></li>
                   <li>
@@ -57,7 +57,7 @@ import TheLinks from '@/components/TheLinks.vue'
                 >
                   Documents
                 </a>
-                <ul class="dropdown-menu">
+                <ul class="dropdown-menu fade-in-bottom-1">
                   <li><a class="dropdown-item" href="/CV">CV</a></li>
                   <li><hr class="dropdown-divider" /></li>
                   <li>
@@ -75,7 +75,7 @@ import TheLinks from '@/components/TheLinks.vue'
                 >
                   Jeux
                 </a>
-                <ul class="dropdown-menu">
+                <ul class="dropdown-menu fade-in-bottom-1">
                   <li><a class="dropdown-item" href="/jeux/tictactoe">Tic-Tac-Toe</a></li>
                   <li><hr class="dropdown-divider" /></li>
                   <li><a class="dropdown-item disabled" href="/">Sudoku</a></li>

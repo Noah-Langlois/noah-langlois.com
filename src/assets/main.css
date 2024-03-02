@@ -32,6 +32,10 @@
   transition: all 1s;
 }
 
+.fade-in-bottom-1 {
+  animation: fade-in-bottom 1s ease 0s 1 normal forwards;
+}
+
 .text-entrance {
   animation: fade-in-bottom 2s ease 0s 1 normal forwards;
 }
