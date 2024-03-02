@@ -1,11 +1,11 @@
 <script setup></script>
 
 <template>
-  <div>
+  <div style="height: 100px; width: 100px" class="align-items-center justify-content-center d-flex">
     <svg
       xmlns="http://www.w3.org/2000/svg"
-      width="100"
-      height="100"
+      width="70"
+      height="70"
       fill="currentColor"
       class="bi bi-circle"
       viewBox="0 0 16 16"

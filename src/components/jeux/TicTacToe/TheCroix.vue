@@ -1,10 +1,10 @@
 <script setup></script>
 <template>
-  <div>
+  <div style="height: 100px; width: 100px" class="d-flex justify-content-center align-items-center">
     <svg
       xmlns="http://www.w3.org/2000/svg"
-      width="100"
-      height="100"
+      width="70"
+      height="70"
       fill="currentColor"
       class="bi bi-x-lg"
       viewBox="0 0 16 16"
