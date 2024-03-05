@@ -5,14 +5,12 @@ import TheCNES from '@/components/stages/TheCNES.vue'
 
 <template>
   <main>
-    <div class="row">
-      <div class="col">
-        <div class="p-5">
-          <TheCNES />
-        </div>
-        <div class="ps-5 pe-5">
-          <TheRU />
-        </div>
+    <div class="d-flex justify-content-center mt-5">
+      <div class="m-3">
+        <TheCNES />
+      </div>
+      <div class="m-3">
+        <TheRU />
       </div>
     </div>
   </main>
