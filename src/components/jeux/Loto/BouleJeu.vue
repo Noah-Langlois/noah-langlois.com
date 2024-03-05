@@ -7,7 +7,7 @@ defineProps({
 
 <template>
   <div>
-    <button type="button" class="btn btn-outline-dark boule-loto" data-bs-toggle="button">
+    <button type="button" class="btn btn-outline-dark boule-loto" data-bs-toggle="button" v-on:click="addJeu(numero)">
       {{ numero }}
     </button>
   </div>
