@@ -5,6 +5,7 @@ import Adhd from '../views/AdhdView.vue'
 import MaFormationVue from '../views/MaFormationView.vue'
 import MesStagesVue from '../views/MesStagesView.vue'
 import TicTacToeVue from '../views/TicTacToeView.vue'
+import LotoView from '@/views/LotoView.vue'
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
   routes: [
@@ -40,6 +41,11 @@ const router = createRouter({
       path: '/jeux/tictactoe',
       name: 'tictactoe',
       component: TicTacToeVue
+    },
+    {
+      path: '/jeux/loto',
+      name: 'loto',
+      component:LotoView
     },
     {
       path: '/ADHD_study',

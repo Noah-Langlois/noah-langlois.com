@@ -6,6 +6,6 @@ const { pdf, pages } = usePDF('../../public/ADHD_study.pdf')
 
 <template>
   <div class="d-flex justify-content-center align-items-center" v-for="page in pages" :key="page">
-    <VuePDF :pdf="pdf" :page="page" :scale="2" />
+    <VuePDF :pdf="pdf" :page="page" :scale="0.8" />
   </div>
 </template>

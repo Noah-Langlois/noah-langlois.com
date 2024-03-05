@@ -124,13 +124,13 @@ function reset() {
 
 <template>
   <div class="d-flex justify-content-start ms-5">
-    <button class="btn btn-outline-dark" v-on:click="setGame('')">
+    <button class="btn btn-outline-dark btn-menu-game size-hover-1-6" v-on:click="setGame('')">
       <svg
         xmlns="http://www.w3.org/2000/svg"
         width="23"
         height="23"
         fill="currentColor"
-        class="bi bi-arrow-left-circle-fill"
+        class="bi-arrow-left-circle-fill"
         viewBox="0 0 16 16"
       >
         <path
@@ -149,7 +149,7 @@ function reset() {
     <h1 class="ps-3">a gagné</h1>
   </div>
   <div v-if="isWon || isNull" class="d-flex justify-content-center p-4 top-entrance">
-    <button class="btn btn-outline-dark" @click="reset">Rejouer</button>
+    <button class="btn btn-outline-dark size-hover-1-6" @click="reset">Rejouer</button>
   </div>
   <div class="d-flex justify-content-center fluid-translation">
     <div class="grille">
