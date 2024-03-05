@@ -1,7 +1,7 @@
 <script setup></script>
 
 <template>
-  <div style="height: 100px; width: 100px" class="align-items-center justify-content-center d-flex">
+  <div style="height: 100px; width: 100px" class="align-items-center justify-content-center d-flex rond">
     <svg
       xmlns="http://www.w3.org/2000/svg"
       width="70"

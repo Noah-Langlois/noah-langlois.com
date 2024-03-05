@@ -1,6 +1,4 @@
-<script setup>
-import TheLinks from '@/components/TheLinks.vue'
-</script>
+<script setup></script>
 
 <template>
   <main class="header">
@@ -82,13 +80,12 @@ import TheLinks from '@/components/TheLinks.vue'
                   <li><hr class="dropdown-divider" /></li>
                   <li><a class="dropdown-item disabled" href="/">Bataille Navale</a></li>
                   <li><hr class="dropdown-divider" /></li>
-                  <li><a class="dropdown-item disabled" href="/">Loto</a></li>
+                  <li><a class="dropdown-item" href="/jeux/loto">Loto</a></li>
                 </ul>
               </li>
             </ul>
           </div>
         </div>
-        <TheLinks />
       </nav>
     </div>
   </main>

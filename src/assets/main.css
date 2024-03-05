@@ -5,19 +5,15 @@
     opacity: 100%;
 }
 
+.boule-loto{
+  border-radius: 1rem;
+  margin: 0.5rem;
+}
+
 .croix-rond-Tic-Tac-Toe {
   animation: scale-up-center 1s ease 0s 1 normal forwards;
 }
 
-@keyframes scale-up-center {
-	0% {
-		transform: scale(0.5);
-	}
-
-	100% {
-		transform: scale(1);
-	}
-}
 
 #ENSMA-Title:hover::after {
   width: 45%;
@@ -44,29 +40,6 @@
   animation: fade-in-top 2s ease 0s 1 normal forwards;
 }
 
-@keyframes fade-in-bottom {
-	0% {
-		opacity: 0;
-		transform: translateY(50px);
-	}
-
-	100% {
-		opacity: 1;
-		transform: translateY(0);
-	}
-}
-
-@keyframes fade-in-top {
-	0% {
-		opacity: 0;
-		transform: translateY(-50px);
-	}
-
-	100% {
-		opacity: 1;
-		transform: translateY(0);
-	}
-}
 
 .nav-item:hover::after {
   width: 100%;
@@ -89,61 +62,81 @@
     animation: zoom-in-zoom-out 2s ease infinite;
 }
 
-@keyframes zoom-in-zoom-out {
-    0% {
-      transform: scale(1, 1);
-    }
-    50% {
-      transform: scale(0.98, 0.98);
-    }
-    100% {
-      transform: scale(1, 1);
-    }
-  }
 
 .logo-cursor {
     animation: blink 1s infinite;
 }
-
-@keyframes blink { 
-    0% { opacity:0; }
-    50% { opacity:1; } 
-    100% { opacity:0; }
-  }
 
 .emptyCase {
   height: 100px;
   width: 100px;
 }
 
-@media only screen and (max-width: 600px) {
-   .grille {
-    width: 240px;
-    height: 240px;
-   }
-   .bi {
-    width: 50px;
-    height: 50px;
-   }
-   .emptyCase {
-    width: 50px;
-    height: 50px;
-   }
-}
-
-
 .ENSMA {
   width: 150px;
 }
+
 .CNES {
   width: 150px;
 }
+
 .RU {
   width: 100px;
   height: 100px;
 }
 
+
+body {
+    background: linear-gradient();
+}
+
+.red-case {
+  animation: color-red 1s ease 0s 1 normal forwards;
+  border-radius: 10%;
+}
+
+
+.blue-case {
+  border-radius: 10%;
+  animation: color-blue 1s ease 0s 1 normal forwards;
+}
+
+
+.size-hover-1-6{
+  transition: all 1s;
+  font-size: 1rem;
+}
+
+.size-hover-1-6:hover {
+  font-size: 1.6rem;
+}
+
+.icon-hover-2-3 {
+  transition: all 1s;
+}
+
+.icon-hover-2-3:hover {
+  height: 2.3rem;
+  width: 2.3rem;
+}
+
 @media only screen and (max-width: 700px) {
+  .rond {
+    width: 50px;
+    height: 50px;
+  }
+  .croix {
+    width: 50px;
+    height: 50px;
+  }
+
+  .profile-picture{
+    width: 11rem;
+  }
+  .bi {
+   width: 50px;
+   height: 50px;
+  }
   .ENSMA {
     width: 100px;
     height: 100px;
@@ -158,14 +151,49 @@
   }
 }
 
-body {
-    background: linear-gradient();
+@keyframes zoom-in-zoom-out {
+    0% {
+      transform: scale(1, 1);
+    }
+    50% {
+      transform: scale(0.9, 0.9);
+    }
+    100% {
+      transform: scale(1, 1);
+    }
+  }
+
+
+@keyframes fade-in-bottom {
+  0% {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
-.red-case {
-  animation: color-red 1s ease 0s 1 normal forwards;
-  border-radius: 10%;
+@keyframes fade-in-top {
+  0% {
+    opacity: 0;
+    transform: translateY(-50px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
+
+@keyframes blink { 
+    0% { opacity:0; }
+    50% { opacity:1; } 
+    100% { opacity:0; }
+  }
+
 
 @keyframes color-red {
   0% {
@@ -177,11 +205,6 @@ body {
   }
 }
 
-.blue-case {
-  border-radius: 10%;
-  animation: color-blue 1s ease 0s 1 normal forwards;
-}
-
 @keyframes color-blue {
   0% {
     background-color: white;
@@ -189,5 +212,15 @@ body {
   100% {
     background-color: rgb(0, 0, 160);
     color: white;
+  }
+}
+
+@keyframes scale-up-center {
+  0% {
+    transform: scale(0.5);
+  }
+
+  100% {
+    transform: scale(1);
   }
 }

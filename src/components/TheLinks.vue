@@ -2,9 +2,9 @@
 
 <template>
   <div class="d-flex justify-content-center align-items-center">
-    <div class="nav-item">
+    <div class="">
       <a
-        class="link-light link-underline-opacity-0"
+        class="link-dark link-underline-opacity-0"
         href="https://github.com/Noah-Langlois"
         target="_blank"
         rel="noopener noreferrer"
@@ -14,7 +14,7 @@
           width="23"
           height="23"
           fill="currentColor"
-          class="bi bi-github"
+          class="bi-github text-entrance icon-hover-2-3"
           viewBox="0 0 16 16"
         >
           <path
@@ -23,9 +23,9 @@
         </svg>
       </a>
     </div>
-    <div class="nav-item ps-3">
+    <div class="ps-3">
       <a
-        class="link-light link-underline-opacity-0"
+        class="link-dark link-underline-opacity-0"
         href="https://www.linkedin.com/in/noahlanglois/"
         target="_blank"
         rel="noopener noreferrer"
@@ -35,7 +35,7 @@
           width="23"
           height="23"
           fill="currentColor"
-          class="bi bi-linkedin"
+          class="bi-linkedin text-entrance icon-hover-2-3"
           viewBox="0 0 16 16"
         >
           <path
@@ -44,14 +44,14 @@
         </svg>
       </a>
     </div>
-    <div class="nav-item ps-3 pe-3">
-      <a href="mailto: noahlanglois@hotmail.com" class="link-light link-underline-opacity-0">
+    <div class="ps-3 pe-3">
+      <a href="mailto: noahlanglois@hotmail.com" class="link-dark link-underline-opacity-0">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           width="23"
           height="23"
           fill="currentColor"
-          class="bi bi-envelope-at"
+          class="bi-envelope-at text-entrance icon-hover-2-3"
           viewBox="0 0 16 16"
         >
           <path
