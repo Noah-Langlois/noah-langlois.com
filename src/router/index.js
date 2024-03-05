@@ -5,7 +5,10 @@ import Adhd from '../views/AdhdView.vue'
 import MaFormationVue from '../views/MaFormationView.vue'
 import MesStagesVue from '../views/MesStagesView.vue'
 import TicTacToeVue from '../views/TicTacToeView.vue'
+import CNESView from '@/views/CNESView.vue'
 import LotoView from '@/views/LotoView.vue'
+import RUView from '@/views/RUView.vue'
+
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
   routes: [
@@ -51,6 +54,16 @@ const router = createRouter({
       path: '/ADHD_study',
       name: 'ADHD',
       component: Adhd
+    },
+    {
+      path: '/stages/CNES',
+      name: 'CNES',
+      component: CNESView
+    },
+    {
+      path: '/stages/RU',
+      name: 'RU',
+      component: RUView
     }
   ]
 })

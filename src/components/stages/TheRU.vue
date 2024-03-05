@@ -2,7 +2,7 @@
 
 <template>
   <div class="card hvr-grow-shadow" id="RU-card">
-    <a class="link-dark link-underline-opacity-0" href="/">
+    <a class="link-dark link-underline-opacity-0" href="/stages/RU">
       <div class="card-body">
         <div class="d-flex justify-content-center text-center">
           <div>
