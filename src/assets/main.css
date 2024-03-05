@@ -162,14 +162,6 @@ body {
     width: 100px;
     height: 100px;
   }
-  .CNES {
-    width: 100px;
-    height: 100px;
-  }
-  .RU{
-    width: 100px;
-    height: 100px;
-  }
 }
 
 @keyframes zoom-in-zoom-out {
