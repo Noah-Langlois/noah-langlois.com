@@ -1,7 +1,7 @@
 <script setup></script>
 
 <template>
-  <div class="d-flex justify-content-center align-items-center">
+  <div class="d-flex justify-content-center align-items-center" id="links-group">
     <div class="">
       <a
         class="link-dark link-underline-opacity-0"

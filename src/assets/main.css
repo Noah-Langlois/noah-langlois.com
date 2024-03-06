@@ -5,6 +5,10 @@
     background: linear-gradient(#520155, #520155e0);
 }
 
+#links-group {
+  height: 2rem;
+}
+
 #CV-card {
   width: 15rem;
 }
