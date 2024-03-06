@@ -1,6 +1,6 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import HomeView from '../views/HomeView.vue'
-import CuriculumVitae from '../components/CuriculumVitae.vue'
+import CvView from '../views/CvView.vue'
 import Adhd from '../views/AdhdView.vue'
 import MaFormationVue from '../views/MaFormationView.vue'
 import MesStagesVue from '../views/MesStagesView.vue'
@@ -28,7 +28,7 @@ const router = createRouter({
     {
       path: '/CV',
       name: 'CV',
-      component: CuriculumVitae
+      component: CvView
     },
     {
       path: '/scolarite',
