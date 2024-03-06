@@ -1,6 +1,6 @@
 <script setup>
 import CuriculumVitae from '@/components/CuriculumVitae.vue'
-import DownloadPdfButton from '@/components/documents/DownloadPdfButton.vue'
+import DownloadPdfButton from '@/components/documents/DownloadCV.vue'
 </script>
 
 <template>
