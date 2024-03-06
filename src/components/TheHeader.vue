@@ -2,8 +2,8 @@
 
 <template>
   <main class="header">
-    <div class="ps-3">
-      <nav class="navbar navbar-expand-lg">
+    <div class="ps-3 a">
+      <nav class="navbar navbar-expand-lg ">
         <div class="container-fluid">
           <a class="navbar-brand text-light" id="websiteLogo" href="/">
             noah-langlois.fr
