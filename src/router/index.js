@@ -8,6 +8,7 @@ import TicTacToeVue from '../views/TicTacToeView.vue'
 import CNESView from '@/views/CNESView.vue'
 import LotoView from '@/views/LotoView.vue'
 import RUView from '@/views/RUView.vue'
+import MenuDocView from '@/views/MenuDocView.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -26,7 +27,7 @@ const router = createRouter({
       component: () => import('../views/AboutView.vue')
     },
     {
-      path: '/CV',
+      path: '/documents/CV',
       name: 'CV',
       component: CvView
     },
@@ -60,6 +61,12 @@ const router = createRouter({
       name: 'CNES',
       component: CNESView
     },
+    {
+      path: '/documents',
+      name: 'Docs',
+      component: MenuDocView
+    },
+
     {
       path: '/stages/RU',
       name: 'RU',

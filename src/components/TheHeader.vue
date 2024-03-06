@@ -3,7 +3,7 @@
 <template>
   <main class="header">
     <div class="ps-3 a">
-      <nav class="navbar navbar-expand-lg ">
+      <nav class="navbar navbar-expand-lg">
         <div class="container-fluid">
           <a class="navbar-brand text-light" id="websiteLogo" href="/">
             noah-langlois.fr
@@ -45,23 +45,8 @@
                   </li>
                 </ul>
               </li>
-              <li class="nav-item dropdown">
-                <a
-                  class="nav-link dropdown-toggle text-light"
-                  href="#"
-                  role="button"
-                  data-bs-toggle="dropdown"
-                  aria-expanded="false"
-                >
-                  Documents
-                </a>
-                <ul class="dropdown-menu fade-in-bottom-1">
-                  <li><a class="dropdown-item" href="/CV">CV</a></li>
-                  <li><hr class="dropdown-divider" /></li>
-                  <li>
-                    <a class="dropdown-item" href="/ADHD_study">ADHD Study</a>
-                  </li>
-                </ul>
+              <li class="nav-item">
+                <a class="nav-link text-light" href="/documents" role="button"> Documents </a>
               </li>
               <li class="nav-item dropdown">
                 <a
