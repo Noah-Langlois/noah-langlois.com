@@ -52,7 +52,7 @@ const router = createRouter({
       component:LotoView
     },
     {
-      path: '/ADHD_study',
+      path: '/documents/ADHD_study',
       name: 'ADHD',
       component: Adhd
     },
