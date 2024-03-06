@@ -1,6 +1,6 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import HomeView from '../views/HomeView.vue'
-import CuriculumVitae from '../components/CuriculumVitae.vue'
+import CvView from '../views/CvView.vue'
 import Adhd from '../views/AdhdView.vue'
 import MaFormationVue from '../views/MaFormationView.vue'
 import MesStagesVue from '../views/MesStagesView.vue'
@@ -8,6 +8,7 @@ import TicTacToeVue from '../views/TicTacToeView.vue'
 import CNESView from '@/views/CNESView.vue'
 import LotoView from '@/views/LotoView.vue'
 import RUView from '@/views/RUView.vue'
+import MenuDocView from '@/views/MenuDocView.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -26,9 +27,9 @@ const router = createRouter({
       component: () => import('../views/AboutView.vue')
     },
     {
-      path: '/CV',
+      path: '/documents/CV',
       name: 'CV',
-      component: CuriculumVitae
+      component: CvView
     },
     {
       path: '/scolarite',
@@ -51,7 +52,7 @@ const router = createRouter({
       component:LotoView
     },
     {
-      path: '/ADHD_study',
+      path: '/documents/ADHD_study',
       name: 'ADHD',
       component: Adhd
     },
@@ -60,6 +61,12 @@ const router = createRouter({
       name: 'CNES',
       component: CNESView
     },
+    {
+      path: '/documents',
+      name: 'Docs',
+      component: MenuDocView
+    },
+
     {
       path: '/stages/RU',
       name: 'RU',

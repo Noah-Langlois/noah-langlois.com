@@ -5,6 +5,14 @@
     background: linear-gradient(#520155, #520155e0);
 }
 
+#CV-card {
+  width: 15rem;
+}
+
+#ADHD-card {
+  width: 20rem;
+}
+
 .boule-loto{
   border-radius: 1rem;
   margin: 0.5rem;
